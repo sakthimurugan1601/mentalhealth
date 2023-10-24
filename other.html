@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TEST</title>
+    <style>
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test</h1>
+    </header>
+    <div class="result">
+        <form action="result.html" method="POST">
+        <form id="quizForm">
+            <div class="question">
+                <p>1.Are you satisfied with your current work life? </p>
+                <ul class="options">
+                    <li class="option">
+                        <input type="radio" name="q1" value="10">
+                        Option A: yes
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q1" value="2">
+                        Option B:no
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q1" value="3"required>
+                        Option C: may be
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="question">
+            <p>2.Are you living with your childhood dream?</p>
+                <ul class="options">
+                    <li class="option">
+                        <input type="radio" name="q2" value="10">
+                        Option A: yes
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q2" value="3">
+                        Option B: no
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="q2" value="2"required>
+                        Option C: not really
+                    </li>
+            
+                    
+                </ul>
+            </div>
+            <div class="question">
+                <p>3.do you want to continue your reality or want to live in  a imaginary world? </p>
+                    <ul class="options">
+                        <li class="option">
+                            <input type="radio" name="q3" value="10">
+                            Option A: yes
+                        </li>
+                        <li class="option">
+                            <input type="radio" name="q3" value="2">
+                            Option B: no
+                        </li>
+                        <li class="option">
+                            <input type="radio" name="q3" value="5"required>
+                            Option C: may be
+                         
+                
+                        
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>4. What steps have you taken toward achieving your goals?</p>
+                        <ul class="options">
+                            <li class="option">
+                                <input type="radio" name="q4" value="10"required>
+                                Option A: Tracking my progress
+                            </li>
+                            <li class="option">
+                                <input type="radio" name="q4" value="5">
+                                Option B: making necessary adjustments
+                            </li>
+                            <li class="option">
+                                <input type="radio" name="q4" value="3">
+                                Option C: not done yet
+                            </li>
+                            
+                    
+                            
+                        </ul>
+                    </div>
+                    <div class="question">
+                        <p>5.if you're planning to travel a world tour how do you prefer?</p>
+                            <ul class="options">
+                                <li class="option">
+                                    <input type="radio" name="q5" value="2"required>
+                                    Option A: myself only
+                                </li>
+                                <li class="option">
+                                    <input type="radio" name="q5" value="10">
+                                    Option B:with friends 
+                                </li>
+                                <li class="option">
+                                    <input type="radio" name="q5" value="5">
+                                    Option C:with strangers  
+                                </li>
+                                
+                        
+                                
+                            </ul>
+                        </div>
+                        <div class="question">
+                            <p> 6.which phase of life do you wish to change?</p>
+                                <ul class="options">
+                                    <li class="option">
+                                        <input type="radio" name="q6" value="2"required>
+                                        Option A:present
+                                    </li>
+                                    <li class="option">
+                                        <input type="radio" name="q6" value="5">
+                                        Option B:past 
+                                    </li><li class="option">
+                                        <input type="radio" name="q6" value="10">
+                                        Option C:don't want to 
+                                    </li>
+                                    
+                            
+                                   
+                                </ul>
+                            </div>
+                            <div class="question">
+                                <p>7. What is your recent accomplishment that made you feel good about yourself?</p>
+                                    <ul class="options">
+                                        <li class="option">
+                                            <input type="radio" name="q7" value="10"required>
+                                            Option A: successfully finishing  my tasks
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="q7" value="5">
+                                            Option B:spending time with friends
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" name="q7" value="2">
+                                            Option C: nothing
+                                        </li>
+                                        
+                                
+                                        
+                                    </ul>
+                                </div>
+                                <div class="question">
+                                    <p>8. Have you noticed any changes in your sleeping or eating patterns lately? </p>
+                                        <ul class="options">
+                                            <li class="option">
+                                                <input type="radio" name="q8" value="10">
+                                                Option A: yes
+                                            </li>
+                                            <li class="option">
+                                                <input type="radio" name="q8" value="1">
+                                                Option B: no
+                                            </li><li class="option">
+                                                <input type="radio" name="q8" value="5"required>
+                                                Option C:not sure
+                                            </li>
+                                            
+                                    
+                                           
+                                        </ul>
+                                    </div>
+                                    <div class="question">
+                                        <p>9. What are some of the things that bring you a sense of fulfillment or purpose? </p>
+                                            <ul class="options">
+                                                <li class="option">
+                                                    <input type="radio" name="q9" value="10">
+                                                    Option A: Achieving my personal goals
+                                                </li>
+                                                <li class="option">
+                                                    <input type="radio" name="q9" value="6">
+                                                    Option B: Connecting with nature and spending time outdoors
+                                                </li>
+                                                <li class="option">
+                                                    <input type="radio" name="q9" value="2"required>
+                                                    Option C: traveling alone allows me to broaden my horizons
+                                                </li>
+                                               
+                                        
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="question">
+                                            <p>10.what do you really wish for before your 30s?</p>
+                                                <ul class="options">
+                                                    <li class="option">
+                                                        <input type="radio" name="q10" value="5"required >
+                                                        Option A: get rich
+                                                    </li>
+                                                    <li class="option">
+                                                        <input type="radio" name="q10" value="10">
+                                                        Option B: having a good relationship
+                                                    </li>
+                                                    <li class="option">
+                                                        <input type="radio" name="q10" value="2"required>
+                                                        Option C: Satisfy myself
+                                                    </li>
+                                            
+                                                   
+                                                </ul>
+                                            </div>
+            </div>
+    
+            
+    
+            <button type="submit"><a href="result.html">submit</a></button>
+        </form>
+    </div>
+</form>
+
+    
+        <script>
+            document.getElementById('quizForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+    
+                
+                const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
+                let totalPercentage = 0;
+    
+                radioButtons.forEach((radio) => {
+                    totalPercentage += parseInt(radio.value);
+                });
+    
+                
+                alert('Quiz completed successfully!\nTotal Percentage: ' + totalPercentage + '%');
+            });
+        </script>
+    </body>
+    </html>
